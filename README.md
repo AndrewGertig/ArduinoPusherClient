@@ -51,8 +51,10 @@ client.unsubscribe("my-channel");
 ### Triggering Events
 
 ```
-client.triggerEvent("my-event", "some data about my-event");
+client.triggerEvent("client-my-event", "some data about my-event");
 ```
+
+Pusher requires you to turn on client triggered events and prefix these events with "client-".
 
 ### Binding to Events
 
